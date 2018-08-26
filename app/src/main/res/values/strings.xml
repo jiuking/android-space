@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="setclock">设置闹钟</string>
+</resources>
