@@ -103,8 +103,13 @@ public class NoDisplayActivity extends Activity implements EventListener{
                 }
             }
             if(params.contains("\"results_recognition\"")){
+                String result = "";
                 if (length > 0 && data.length > 0) {
                     Log.i(",第一个结果", new String(data, offset, length));
+                }
+                if (params.contains("关")) {
+                    Log.i("结果","关闭");
+                    stopFlag = true;
                 }
             }
         } else if (data != null) {
